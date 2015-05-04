@@ -1,4 +1,4 @@
-const name = 'two';
+const name = 'darkGrey';
 const Name = name.charAt(0).toUpperCase() + name.slice(1);
 
 class Ctrl{

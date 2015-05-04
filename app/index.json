@@ -4,27 +4,27 @@
   "nav": {
     "primary": [
       {
-        "title": "One",
-        "link": "one"
+        "title": "Blue",
+        "link": "blue"
       },
       {
-        "title": "Two",
-        "link": "two"
+        "title": "Red",
+        "link": "red"
       },
       {
-        "title": "Three",
-        "link": "three"
+        "title": "Orange",
+        "link": "orange"
       }
     ],
     "secondary": [{
-      "title": "A",
-      "link": "itemA"
+      "title": "Light Blue",
+      "link": "lightBlue"
     }, {
-      "title": "B",
-      "link": "itemB"
+      "title": "Dark Grey",
+      "link": "darkGrey"
     }, {
-      "title": "C",
-      "link": "itemC"
+      "title": "White",
+      "link": "ghostWhite"
     }]
   }
 }

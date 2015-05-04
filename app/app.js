@@ -5,43 +5,43 @@ export default () => {
     controller: function ($router) {
       $router.config([{
         path: '/',
-        redirectTo: '/one'
+        redirectTo: '/blue'
       }, {
-        path: '/one',
+        path: '/blue',
         components: {
-          primary: 'one',
-          secondary: 'itemA'
+          primary: 'blue',
+          secondary: 'lightBlue'
         }
       }, {
-        path: '/two',
+        path: '/red',
         components: {
-          primary: 'two',
-          secondary: 'itemA'
+          primary: 'red',
+          secondary: 'ghostWhite'
         }
       }, {
-        path: '/three',
+        path: '/orange',
         components: {
-          primary: 'three',
-          secondary: 'itemA'
+          primary: 'orange',
+          secondary: 'darkGrey'
         }
-      }, {
-        path: '/A',
-        components: {
-          primary: 'one',
-          secondary: 'itemA'
-        }
-      }, {
-        path: '/B',
-        components: {
-          primary: 'one',
-          secondary: 'itemB'
-        }
-      }, {
-        path: '/C',
-        components: {
-          primary: 'one',
-          secondary: 'itemC'
-        }
+      //}, {
+      //  path: '/A',
+      //  components: {
+      //    primary: 'one',
+      //    secondary: 'itemA'
+      //  }
+      //}, {
+      //  path: '/B',
+      //  components: {
+      //    primary: 'one',
+      //    secondary: 'itemB'
+      //  }
+      //}, {
+      //  path: '/C',
+      //  components: {
+      //    primary: 'one',
+      //    secondary: 'itemC'
+      //  }
       }]);
     }
   };
