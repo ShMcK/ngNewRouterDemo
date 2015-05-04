@@ -1,32 +1,42 @@
-<form class="form-horizontal" novalidate>
-  <fieldset>
+<div>
+  <div ng-form="form" class="form-horizontal" novalidate>
+    <fieldset>
 
-    <!-- Form Name -->
-    <legend>Login</legend>
+      <!-- Form Name -->
+      <legend>Login</legend>
 
-    <!-- Text input-->
-    <div class="control-group">
-      <label class="control-label" for="name">Name</label>
+      <!-- Text input-->
+      <div class="control-group">
+        <label class="control-label" for="name">Name</label>
 
-      <div class="controls">
-        <input id="name" name="name" type="text" placeholder="User Name" class="input-xlarge"
-               ng-model="login.user.username" required="">
+        <div class="controls">
+          <input id="name" name="name" type="text" placeholder="User Name" class="input-xlarge"
+                 ng-model="login.user.username" required>
 
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- Password input-->
-    <div class="control-group">
-      <label class="control-label" for="password">Password</label>
+      <br>
+      <!-- Password input-->
+      <div class="control-group">
+        <label class="control-label" for="password">Password</label>
 
-      <div class="controls">
-        <input id="password" name="password" type="password" placeholder="****" class="input-xlarge"
-               ng-model="login.user.password" required="">
+        <div class="controls">
+          <input id="password" name="password" type="password" placeholder="****" class="input-xlarge"
+                 ng-model="login.user.password" required>
 
+        </div>
       </div>
-    </div>
-    <br>
-    <a ng-link="form:age"><button class="btn btn-primary">Continue</button></a>
+      <br>
+      <a ng-link="form:age">
+        <button class="btn btn-primary">Continue</button>
+      </a>
 
-  </fieldset>
-</form>
+    </fieldset>
+  </div>
+  <br>
+
+  <div class="well">
+    <label>Current Form State</label><br>
+    Valid: {{form.$valid}}
+  </div>
+</div>

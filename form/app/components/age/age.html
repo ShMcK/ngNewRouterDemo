@@ -1,33 +1,45 @@
-<form class="form-horizontal">
-  <fieldset>
+<div>
+  <div ng-form="form" class="form-horizontal">
+    <fieldset>
 
-    <!-- Form Name -->
-    <legend>Age</legend>
+      <!-- Form Name -->
+      <legend>Age</legend>
 
-    <!-- Select Basic -->
-    <div class="control-group">
-      <label class="control-label" for="ageActual">Actual</label>
-      <div class="controls">
-        <select id="ageActual" name="ageActual" class="input-xlarge">
-          <option>Young</option>
-          <option>Middle-Aged</option>
-          <option>Old</option>
-        </select>
+      <!-- Select Basic -->
+      <div class="control-group">
+        <label class="control-label" for="ageActual">Actual</label>
+
+        <div class="controls">
+          <select id="ageActual" name="ageActual" class="input-xlarge">
+            <option>Young</option>
+            <option>Middle-Aged</option>
+            <option>Old</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- Select Basic -->
-    <div class="control-group">
-      <label class="control-label" for="ageFeeling">Feeling</label>
-      <div class="controls">
-        <select id="ageFeeling" name="ageFeeling" class="input-xlarge">
-          <option>Young</option>
-          <option>Middle-Aged</option>
-          <option>Old</option>
-        </select>
+      <br>
+      <!-- Select Basic -->
+      <div class="control-group">
+        <label class="control-label" for="ageFeeling">Feeling</label>
+
+        <div class="controls">
+          <select id="ageFeeling" name="ageFeeling" class="input-xlarge">
+            <option>Young</option>
+            <option>Middle-Aged</option>
+            <option>Old</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <br>
-    <a ng-link="form:about"><button class="btn btn-primary">Continue</button></a>
-  </fieldset>
-</form>
+      <br>
+      <a ng-link="form:about">
+        <button class="btn btn-primary">Continue</button>
+      </a>
+    </fieldset>
+  </div>
+  <br>
+
+  <div class="well">
+    <label>Current Form State</label><br>
+    Valid: {{form.$valid}}
+  </div>
+</div>
