@@ -14,12 +14,12 @@ export default () => {
       }, {
         path: '/2',
         components: {
-          form: 'about'
+          form: 'age'
         }
       }, {
         path: '/3',
         components: {
-          form: 'age'
+          form: 'about'
         }
       }, {
         path: '/complete',

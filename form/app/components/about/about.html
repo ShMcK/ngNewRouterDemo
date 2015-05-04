@@ -10,25 +10,18 @@
         <label class="control-label" for="about">About Me</label>
 
         <div class="controls">
-          <textarea id="about" name="about">I'm very...</textarea>
+          <textarea id="about" name="about" ng-model="about.user.about" required>I'm very...</textarea>
         </div>
       </div>
       <br>
-      <!-- Multiple Radios -->
       <div class="control-group">
-        <label class="control-label" for="gender">Gender</label>
+        <label class="control-label" for="about">More About Me</label>
 
         <div class="controls">
-          <label class="radio" for="gender-0">
-            <input type="radio" name="gender" id="gender-0" value="Male" checked="checked">
-            Male
-          </label>
-          <label class="radio" for="gender-1">
-            <input type="radio" name="gender" id="gender-1" value="Female">
-            Female
-          </label>
+          <textarea id="moreAbout" name="moreAbout" ng-model="about.user.moreAbout" required>I'm also very...</textarea>
         </div>
       </div>
+
       <br>
       <a ng-link="form:end">
         <button class="btn btn-primary">Continue</button>

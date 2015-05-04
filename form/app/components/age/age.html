@@ -10,7 +10,8 @@
         <label class="control-label" for="ageActual">Actual</label>
 
         <div class="controls">
-          <select id="ageActual" name="ageActual" class="input-xlarge">
+          <select id="ageActual" name="ageActual" class="input-xlarge"
+              ng-model="age.user.ageActual">
             <option>Young</option>
             <option>Middle-Aged</option>
             <option>Old</option>
@@ -23,7 +24,8 @@
         <label class="control-label" for="ageFeeling">Feeling</label>
 
         <div class="controls">
-          <select id="ageFeeling" name="ageFeeling" class="input-xlarge">
+          <select id="ageFeeling" name="ageFeeling" class="input-xlarge"
+              ng-model="age.user.ageFeeling">
             <option>Young</option>
             <option>Middle-Aged</option>
             <option>Old</option>
