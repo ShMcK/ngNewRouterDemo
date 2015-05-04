@@ -5,26 +5,26 @@
     "primary": [
       {
         "title": "One",
-        "href": "/one"
+        "link": "one"
       },
       {
         "title": "Two",
-        "href": "/two"
+        "link": "two"
       },
       {
         "title": "Three",
-        "href": "/three"
+        "link": "three"
       }
     ],
     "secondary": [{
       "title": "A",
-      "link": "#"
+      "link": "itemA"
     }, {
       "title": "B",
-      "link": "#"
+      "link": "itemB"
     }, {
       "title": "C",
-      "link": "#"
+      "link": "itemC"
     }]
   }
 }

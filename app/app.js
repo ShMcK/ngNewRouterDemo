@@ -8,21 +8,39 @@ export default () => {
         redirectTo: '/one'
       }, {
         path: '/one',
-        component: {
+        components: {
           primary: 'one',
           secondary: 'itemA'
         }
       }, {
         path: '/two',
-        component: {
+        components: {
           primary: 'two',
           secondary: 'itemA'
         }
       }, {
         path: '/three',
-        component: {
+        components: {
           primary: 'three',
           secondary: 'itemA'
+        }
+      }, {
+        path: '/A',
+        components: {
+          primary: 'one',
+          secondary: 'itemA'
+        }
+      }, {
+        path: '/B',
+        components: {
+          primary: 'one',
+          secondary: 'itemB'
+        }
+      }, {
+        path: '/C',
+        components: {
+          primary: 'one',
+          secondary: 'itemC'
         }
       }]);
     }
