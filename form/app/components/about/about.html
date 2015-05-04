@@ -1,0 +1,32 @@
+<form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Personal Information</legend>
+
+    <!-- Textarea -->
+    <div class="control-group">
+      <label class="control-label" for="about">About Me</label>
+      <div class="controls">
+        <textarea id="about" name="about">I'm very...</textarea>
+      </div>
+    </div>
+    <br>
+    <!-- Multiple Radios -->
+    <div class="control-group">
+      <label class="control-label" for="gender">Gender</label>
+      <div class="controls">
+        <label class="radio" for="gender-0">
+          <input type="radio" name="gender" id="gender-0" value="Male" checked="checked">
+          Male
+        </label>
+        <label class="radio" for="gender-1">
+          <input type="radio" name="gender" id="gender-1" value="Female">
+          Female
+        </label>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-primary" ng-link="end">Continue</button>
+  </fieldset>
+</form>

@@ -1,0 +1,32 @@
+<form class="form-horizontal" novalidate>
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Login</legend>
+
+    <!-- Text input-->
+    <div class="control-group">
+      <label class="control-label" for="name">Name</label>
+
+      <div class="controls">
+        <input id="name" name="name" type="text" placeholder="User Name" class="input-xlarge"
+               ng-model="login.user.username" required="">
+
+      </div>
+    </div>
+    <br>
+    <!-- Password input-->
+    <div class="control-group">
+      <label class="control-label" for="password">Password</label>
+
+      <div class="controls">
+        <input id="password" name="password" type="password" placeholder="****" class="input-xlarge"
+               ng-model="login.user.password" required="">
+
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-primary" ng-link="age">Continue</button>
+
+  </fieldset>
+</form>

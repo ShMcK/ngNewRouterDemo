@@ -5,7 +5,19 @@ export default () => {
     controller: function ($router) {
       $router.config([{
         path: '/',
-        redirectTo: '/'
+        redirectTo: '/1'
+      }, {
+        path: '/1',
+        component: 'login'
+      }, {
+        path: '/2',
+        component: 'about'
+      }, {
+        path: '/3',
+        component: 'age'
+      }, {
+        path: '/complete',
+        component: 'end'
       }]);
     }
   };
