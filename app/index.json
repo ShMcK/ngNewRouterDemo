@@ -1,0 +1,17 @@
+{
+  "en": {
+    "name": "Angular-New-Router Demos",
+    "version": "0.1.0",
+    "nav": [
+      {
+        "text": "Page 1",
+        "link": "#"
+      },
+      {
+        "text": "Page 2",
+        "link": "#"
+      }
+    ]
+  }
+}
+
