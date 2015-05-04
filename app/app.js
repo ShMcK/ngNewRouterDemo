@@ -8,13 +8,22 @@ export default () => {
         redirectTo: '/one'
       }, {
         path: '/one',
-        component: 'one'
+        component: {
+          primary: 'one',
+          secondary: 'itemA'
+        }
       }, {
         path: '/two',
-        component: 'two'
+        component: {
+          primary: 'two',
+          secondary: 'itemA'
+        }
       }, {
         path: '/three',
-        component: 'three'
+        component: {
+          primary: 'three',
+          secondary: 'itemA'
+        }
       }]);
     }
   };

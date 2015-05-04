@@ -10,7 +10,10 @@ export default angular.module('app', [
   require('./components/nav/nav').name,
   require('./components/one/one').name,
   require('./components/two/two').name,
-  require('./components/three/three').name
+  require('./components/three/three').name,
+  require('./components/item-a/itemA').name,
+  require('./components/item-b/itemB').name,
+  require('./components/item-c/itemC').name
 ])
   .directive('app', require('./app'));
 

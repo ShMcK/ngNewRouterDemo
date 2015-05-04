@@ -17,13 +17,13 @@
       }
     ],
     "secondary": [{
-      "title": "itemA",
+      "title": "A",
       "link": "#"
     }, {
-      "title": "itemB",
+      "title": "B",
       "link": "#"
     }, {
-      "title": "itemA",
+      "title": "C",
       "link": "#"
     }]
   }
