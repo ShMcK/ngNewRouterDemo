@@ -3,7 +3,6 @@
 export default angular.module('app', [
   /* ng Modules */
   'ngNewRouter',
-  //'ngAnimate', // some error
 
   /* modules */
   //require('./services/services').name,

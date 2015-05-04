@@ -8,6 +8,5 @@ export default () => {
    */
   //global.$ = global.jQuery = require('jquery');
   require('angular');
-  require('angular-animate');
   require('angular-new-router');
 };
