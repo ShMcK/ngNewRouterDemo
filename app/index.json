@@ -1,17 +1,22 @@
 {
-  "en": {
-    "name": "Angular-New-Router Demos",
-    "version": "0.1.0",
-    "nav": [
+  "title": "New-Router Demos",
+  "version": "0.1.0",
+  "nav": {
+    "primary": [
       {
-        "text": "Page 1",
-        "link": "#"
+        "title": "One",
+        "link": "one"
       },
       {
-        "text": "Page 2",
-        "link": "#"
+        "title": "Two",
+        "link": "two"
+      },
+      {
+        "title": "Three",
+        "link": "three"
       }
-    ]
+    ],
+    "secondary": []
   }
 }
 

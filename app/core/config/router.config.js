@@ -1,3 +1,5 @@
+// de-activated
+
 function routerConfig($componentLoaderProvider) {
   // views: snake-cased-name.html (components/name/*)
   $componentLoaderProvider.setTemplateMapping(function (name) {

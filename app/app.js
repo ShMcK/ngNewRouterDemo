@@ -1,7 +1,7 @@
 export default () => {
   return {
     restrict: 'E',
-    template: `<ng-viewport></ng-viewport>`,
+    template: require('./app.html'),
     controller: function ($router) {
       $router.config([{
         path: '/',
