@@ -8,16 +8,24 @@ export default () => {
         redirectTo: '/1'
       }, {
         path: '/1',
-        component: 'login'
+        components: {
+          form: 'login'
+        }
       }, {
         path: '/2',
-        component: 'about'
+        components: {
+          form: 'about'
+        }
       }, {
         path: '/3',
-        component: 'age'
+        components: {
+          form: 'age'
+        }
       }, {
         path: '/complete',
-        component: 'end'
+        components: {
+          form: 'end'
+        }
       }]);
     }
   };
