@@ -4,12 +4,20 @@ class UserService {
   }
 
   save(updates) {
-    if (updates.length) {
-      updates.forEach((update)=> {
-        var key = Object.keys(update);
-        this.user[key] = update[key];
-      });
+    function update(obj) {
+      for (var i = 1; i < arguments.length; i++) {
+        for (var prop in arguments[i]) {
+          var val = arguments[i][prop];
+          if (typeof val === 'object') {
+            update(obj[prop], val);
+          } else {
+            obj[prop] = val;
+          }
+        }
+      }
+      return obj;
     }
+    update(this.user, updates);
   }
 }
 
