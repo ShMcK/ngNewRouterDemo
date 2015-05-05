@@ -1,22 +1,17 @@
 class LoginCtrl {
-  constructor($scope) {
-    this.formValid = false;
-    $scope.$watch('form.$valid', (newVal) => {
-      this.formValid = newVal;
-      //this.formValid = true;
-    });
-  }
-  canDeactivate(){
-    if (this.formValid) {
-      var alertResult = confirm('You have unsaved changes. Do you want to move away from this page?');
-      return alertResult;
-    }
-    return true;
+  constructor() {
+    //this.form.terms = false;
   }
 }
-LoginCtrl.$inject = ['$scope'];
-
-
+LoginCtrl.prototype.canDeactivate = function () {
+  if (!this.form.terms) {
+    this.form.terms = confirm('Do you accept the terms & conditions.');
+    // false = stay
+    return this.form.terms;
+  }
+  // true = continue
+  return true;
+};
 
 export default angular.module('app.form.login', [])
   .controller('LoginController', LoginCtrl);

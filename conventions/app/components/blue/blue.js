@@ -7,5 +7,6 @@ class Ctrl{
   }
 }
 
+
 export default angular.module(`app.${name}`, [])
   .controller(`${Name}Controller`, Ctrl);

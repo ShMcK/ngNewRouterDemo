@@ -1,5 +1,5 @@
 <div>
-  <div ng-form="form" class="form-horizontal" novalidate>
+    <div ng-form="form" class="form-horizontal" novalidate>
     <fieldset>
 
       <!-- Form Name -->
@@ -11,7 +11,7 @@
 
         <div class="controls">
           <input id="name" name="name" type="text" placeholder="User Name" class="input-xlarge"
-                 ng-model="login.user.username" required>
+                 ng-model="login.form.username" required>
 
         </div>
       </div>
@@ -22,13 +22,25 @@
 
         <div class="controls">
           <input id="password" name="password" type="password" placeholder="****" class="input-xlarge"
-                 ng-model="login.user.password" required>
+                 ng-model="login.form.password" required>
 
         </div>
       </div>
       <br>
+      <div class="control-group">
+        <label class="control-label" for="termsConditions">Terms &amp; Conditions</label>
+        <div class="controls">
+          <label class="checkbox" for="termsConditions">
+            <input type="checkbox" name="termsConditions" id="termsConditions" value="I accept"
+                ng-model="login.form.terms">
+            I accept
+          </label>
+        </div>
+      </div>
+      <br>
       <a ng-link="form:age">
-        <button class="btn btn-primary">Continue</button>
+        <button class="btn btn-primary"
+            ng-disabled="form.$invalid">Continue</button>
       </a>
 
     </fieldset>
@@ -37,6 +49,7 @@
 
   <div class="well">
     <label>Current Form State</label><br>
-    Valid: {{form.$valid}}
+    Valid: {{form.$valid}}<br>
+    May Continue: {{form.terms}}
   </div>
 </div>
