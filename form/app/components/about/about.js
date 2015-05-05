@@ -1,14 +1,16 @@
 class AboutCtrl {
   constructor(UserService) {
-    this.User = UserService;
+    this.user = UserService.user;
   }
 }
-AboutCtrl.$inject = ['AboutCtrl'];
-AboutCtrl.prototype.canDeactivate = function () {
-
-  // save
-  this.User.save(this.form);
-  // true = continue
+AboutCtrl.$inject = ['UserService'];
+AboutCtrl.prototype.canActivate = function () {
+  console.log(this.user.username);
+  if (!this.user.username) {
+    // route user to start of form if form not complete so far
+    alert('Please start the form from the beginning.');
+    return false;
+  }
   return true;
 };
 
